@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1679330384 source:f:\coding\frontend and backend\c++\exercises\random\main.cpp
+	<iostream>
+	<string.h>
+
