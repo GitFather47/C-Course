@@ -38,12 +38,11 @@ class DiscountedItem : public Item
 };
 int main()
 {
-        int i, qt;
-        double discount = 0, price = 0;
+        int i, qt, discount = 0, price = 0;
 
         cout<<"\n How many items you want to enter? : ";
         cin>>qt;
-        DiscountedItem *di = new DiscountedItem[qt];
+        DiscountedItem *di= new DiscountedItem[qt];
         for(i=0; i<qt; i++)
         {
                 di[i].accept_details();
@@ -60,7 +59,7 @@ int main()
         {
                 discount += di[i].item_price-di[i].discounted_price;
         }
-        cout<<"\n Total Price : "<<price;
-        cout<<"\n Total Discount : "<<discount;
+        cout<<"\nTotal Price : "<<price;
+        cout<<"\nTotal Discount : "<<discount;
         return 0;
 }
